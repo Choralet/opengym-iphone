@@ -1,0 +1,360 @@
+{
+  "opengym_plan": 1,
+  "exported": "2026-10-06",
+  "name": "Calisthenics PPL ×2 (6 days)",
+  "unit": "kg",
+  "week": {
+    "1": [
+      "pushA"
+    ],
+    "2": [
+      "pullA"
+    ],
+    "3": [
+      "legsA"
+    ],
+    "4": [
+      "pushB"
+    ],
+    "5": [
+      "pullB"
+    ],
+    "6": [
+      "legsB"
+    ]
+  },
+  "routines": [
+    {
+      "id": "pushA",
+      "name": "Push A · Chest",
+      "emoji": "figureStrength",
+      "ex": [
+        {
+          "id": "0279",
+          "sets": 4,
+          "reps": 8,
+          "repsMax": 15,
+          "restSec": 90,
+          "note": "Feet on a chair. 2 s down, no bouncing."
+        },
+        {
+          "id": "3294",
+          "sets": 3,
+          "reps": 8,
+          "repsMax": 16,
+          "restSec": 90,
+          "side": true,
+          "note": "Reps are both sides together (8 = 4 per side)."
+        },
+        {
+          "id": "0251",
+          "sets": 3,
+          "reps": 8,
+          "repsMax": 15,
+          "restSec": 120,
+          "note": "Two sturdy chairs or a kitchen-counter corner. Lean forward for chest."
+        },
+        {
+          "id": "0283",
+          "sets": 3,
+          "reps": 10,
+          "repsMax": 20,
+          "restSec": 60,
+          "note": "Elbows tucked; finish each set 1–2 reps short of failure."
+        },
+        {
+          "id": "3300",
+          "sets": 3,
+          "mode": "time",
+          "sec": 20,
+          "prog": "time",
+          "inc": 5,
+          "restSec": 60,
+          "note": "Planche lean: hands by hips, fingers back, shoulders past wrists."
+        },
+        {
+          "id": "0472",
+          "sets": 3,
+          "reps": 8,
+          "repsMax": 15,
+          "restSec": 60,
+          "note": "No swinging. Bent knees if straight legs are too hard."
+        }
+      ]
+    },
+    {
+      "id": "pullA",
+      "name": "Pull A · Lats",
+      "emoji": "pullup",
+      "ex": [
+        {
+          "id": "0652",
+          "sets": 4,
+          "reps": 6,
+          "repsMax": 12,
+          "restSec": 120,
+          "note": "Dead hang to chin over bar. Full range every rep."
+        },
+        {
+          "id": "1326",
+          "sets": 3,
+          "reps": 6,
+          "repsMax": 12,
+          "restSec": 90,
+          "note": "3 s lowering."
+        },
+        {
+          "id": "3296",
+          "sets": 4,
+          "mode": "time",
+          "sec": 10,
+          "prog": "time",
+          "inc": 5,
+          "restSec": 90,
+          "note": "Use the tuck or advanced-tuck lever you can hold with a flat back."
+        },
+        {
+          "id": "0688",
+          "sets": 3,
+          "reps": 10,
+          "repsMax": 15,
+          "restSec": 60,
+          "note": "Straight arms; pull shoulders down and back, pause 1 s."
+        },
+        {
+          "id": "1327",
+          "sets": 3,
+          "reps": 8,
+          "repsMax": 12,
+          "restSec": 60,
+          "note": "Hands close, palms facing you — biceps finisher."
+        }
+      ]
+    },
+    {
+      "id": "legsA",
+      "name": "Legs A · Quads",
+      "emoji": "legs",
+      "ex": [
+        {
+          "id": "1759",
+          "sets": 4,
+          "reps": 10,
+          "repsMax": 16,
+          "restSec": 120,
+          "side": true,
+          "note": "Both legs together (10 = 5 per leg). Hold a doorframe or squat to a chair if needed."
+        },
+        {
+          "id": "2368",
+          "sets": 3,
+          "reps": 20,
+          "repsMax": 30,
+          "restSec": 90,
+          "side": true,
+          "note": "Bulgarian: rear foot on a chair. Both legs together (20 = 10 per leg)."
+        },
+        {
+          "id": "0496",
+          "sets": 3,
+          "reps": 5,
+          "repsMax": 10,
+          "restSec": 120,
+          "note": "Nordic curl: heels under a sofa, knee on a cushion. Lower as slowly as you can."
+        },
+        {
+          "id": "3645",
+          "sets": 3,
+          "reps": 20,
+          "repsMax": 30,
+          "restSec": 60,
+          "side": true,
+          "note": "Both legs together (20 = 10 per leg). 1 s squeeze at top."
+        },
+        {
+          "id": "1490",
+          "sets": 4,
+          "reps": 24,
+          "repsMax": 40,
+          "restSec": 45,
+          "side": true,
+          "note": "One leg at a time on a step, full stretch at the bottom. Both legs together."
+        }
+      ]
+    },
+    {
+      "id": "pushB",
+      "name": "Push B · Shoulders",
+      "emoji": "figureStrength",
+      "ex": [
+        {
+          "id": "3302",
+          "sets": 3,
+          "mode": "time",
+          "sec": 30,
+          "prog": "time",
+          "inc": 5,
+          "restSec": 60,
+          "note": "Wall handstand, chest to wall. Skill work — stay fresh."
+        },
+        {
+          "id": "0471",
+          "sets": 4,
+          "reps": 6,
+          "repsMax": 12,
+          "restSec": 120,
+          "note": "Pike push-up with feet on a chair until wall handstand push-ups are possible."
+        },
+        {
+          "id": "0251",
+          "sets": 3,
+          "reps": 8,
+          "repsMax": 15,
+          "restSec": 90,
+          "note": "Upright torso this time for triceps."
+        },
+        {
+          "id": "1311",
+          "sets": 3,
+          "reps": 12,
+          "repsMax": 20,
+          "restSec": 60,
+          "note": "3 s lowering, pause at the bottom."
+        },
+        {
+          "id": "0259",
+          "sets": 3,
+          "reps": 10,
+          "repsMax": 20,
+          "restSec": 60,
+          "note": "Triceps finisher."
+        },
+        {
+          "id": "3419",
+          "sets": 3,
+          "mode": "time",
+          "sec": 10,
+          "prog": "time",
+          "inc": 5,
+          "restSec": 60,
+          "note": "Tuck L-sit if your legs won’t straighten; hands on two books helps."
+        }
+      ]
+    },
+    {
+      "id": "pullB",
+      "name": "Pull B · Upper back",
+      "emoji": "pullup",
+      "ex": [
+        {
+          "id": "1429",
+          "sets": 4,
+          "reps": 6,
+          "repsMax": 12,
+          "restSec": 120,
+          "note": "Wide grip, pull chest toward the bar."
+        },
+        {
+          "id": "3293",
+          "sets": 3,
+          "reps": 6,
+          "repsMax": 12,
+          "restSec": 120,
+          "side": true,
+          "note": "Both sides together (6 = 3 per side). Straight arm stays slightly bent."
+        },
+        {
+          "id": "0499",
+          "sets": 4,
+          "reps": 8,
+          "repsMax": 15,
+          "restSec": 90,
+          "note": "Under a sturdy table (test it first!) or a low bar. No table: towel row around a closed door."
+        },
+        {
+          "id": "3304",
+          "sets": 3,
+          "reps": 3,
+          "repsMax": 8,
+          "restSec": 90,
+          "note": "Skin the cat: slow, controlled; great for shoulder mobility."
+        },
+        {
+          "id": "0139",
+          "sets": 3,
+          "reps": 8,
+          "repsMax": 12,
+          "restSec": 60,
+          "note": "Narrow grip, palms facing you — biceps."
+        },
+        {
+          "id": "0473",
+          "sets": 3,
+          "reps": 6,
+          "repsMax": 12,
+          "restSec": 60,
+          "note": "Toes to bar, or as high as you can without swinging."
+        }
+      ]
+    },
+    {
+      "id": "legsB",
+      "name": "Legs B · Posterior",
+      "emoji": "legs",
+      "ex": [
+        {
+          "id": "1489",
+          "sets": 3,
+          "reps": 10,
+          "repsMax": 20,
+          "restSec": 90,
+          "note": "Hold a doorframe. Knees forward, hips straight."
+        },
+        {
+          "id": "1759",
+          "sets": 3,
+          "reps": 8,
+          "repsMax": 14,
+          "restSec": 120,
+          "side": true,
+          "note": "Paused pistols: 2 s at the bottom. Both legs together."
+        },
+        {
+          "id": "1460",
+          "sets": 3,
+          "reps": 20,
+          "repsMax": 30,
+          "restSec": 90,
+          "side": true,
+          "note": "Long steps, back knee taps the floor. Both legs together."
+        },
+        {
+          "id": "0730",
+          "sets": 3,
+          "reps": 12,
+          "repsMax": 20,
+          "restSec": 75,
+          "side": true,
+          "note": "Slider leg curl: towel under one heel on a smooth floor, hips up. Both legs together."
+        },
+        {
+          "id": "1373",
+          "sets": 4,
+          "reps": 20,
+          "repsMax": 35,
+          "restSec": 45,
+          "note": "Slow, full range; pause at the top."
+        },
+        {
+          "id": "0475",
+          "sets": 3,
+          "reps": 8,
+          "repsMax": 15,
+          "restSec": 60,
+          "note": "Straight legs, no swinging."
+        }
+      ]
+    }
+  ],
+  "customEx": []
+}
