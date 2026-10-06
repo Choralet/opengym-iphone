@@ -1,0 +1,40 @@
+# Once a week, looks for a newer openGym release and opens an issue when there is one, so you get
+# a GitHub notification. Nothing is updated by itself: you decide when, by editing OPENGYM_VERSION.
+name: Check for openGym updates
+
+on:
+  schedule:
+    - cron: '17 7 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          current="$(tr -d '[:space:]' < OPENGYM_VERSION)"
+          latest="$(gh release view --repo DuarteSantos8/openGym --json tagName -q .tagName)"
+          echo "pinned $current, latest $latest"
+          newest="$(printf '%s\n%s\n' "${current#v}" "${latest#v}" | sort -V | tail -1)"
+          [ "v$newest" = "$current" ] && { echo "Up to date."; exit 0; }
+          title="openGym $latest is available"
+          if gh issue list --state open --search "in:title \"$title\"" --json number -q '.[0].number' | grep -q .; then
+            echo "Issue already open."; exit 0
+          fi
+          gh issue create --title "$title" --body "$(cat <<BODY
+          You're on **$current**. Release notes: https://github.com/DuarteSantos8/openGym/releases/tag/$latest
+
+          **Back up first:** in the app, Settings → Data → **Export backup (JSON)**, and save it to Files or iCloud Drive.
+
+          To update, edit [\`OPENGYM_VERSION\`]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/edit/main/OPENGYM_VERSION) to \`$latest\` and commit.
+          The site redeploys in about two minutes; then fully close the app on your iPhone (swipe it
+          away) and reopen it to pick up the new version.
+          BODY
+          )"
